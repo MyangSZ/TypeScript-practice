@@ -88,10 +88,15 @@ users.push(
 )
 
 // Nested 객체 (중첩 객체)
+// 배열, optional, readonly 사용가능
 type Payload = {
     timestamp: number;
     type: 'string'
-    user: {id: string; isActive: boolean}
+    user: {
+        readonlyid: string; 
+        isActive?: boolean
+        emain: string[]
+    }
 }
 
 const payload: Payload = {
@@ -99,7 +104,8 @@ const payload: Payload = {
     type: 'event',
     user: {
         id: "123",
-        isActive: true
+        isActive: true,
+        email: ['asdf@adf@asdfw.com']
     }
 
 }
