@@ -6,3 +6,4 @@
 
 1. 배열타입 (Array-TYpe)
 2. 객체타입 (Object-Type)
+3. 함수타입 (Function-Type)
