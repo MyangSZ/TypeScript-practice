@@ -10,3 +10,4 @@
 4. 유니언타입 (Union-Type)
 5. 인터페이스 (Interfaces)
 6. 튜플 (Tuples)
+7. 열거형 (Enum)
