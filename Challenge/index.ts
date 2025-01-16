@@ -1,6 +1,8 @@
 // 제네릭 클래스 (큐 방식으로 동작하는 클래스)
 // 큐:  선형 자료구조, FIFO(First-in-First-Out)
 
+// 큐클래스는 다양한 타입의 데이터를 유연하게 처리할 수 있다.
+
 class GenericQueue<T> {
   private items: T[] = [];
 
@@ -35,5 +37,3 @@ console.log(stringQ.peek()); // TypeScipt 반환
 const numberQ = new GenericQueue<number>();
 numberQ.enqueue(10);
 numberQ.enqueue(20);
-
-// 큐클래스는 다양한 타입의 데이터를 유연하게 처리할 수 있다.
