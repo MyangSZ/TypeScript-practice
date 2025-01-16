@@ -1,4 +1,4 @@
-## TYpeScript 수업
+## TypeScript 수업
 
 ### 챕터 4 (Day-d)
 
