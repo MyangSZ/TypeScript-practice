@@ -21,3 +21,35 @@ if (link1 instanceof HTMLAnchorElement) {
 
 // 2. 타입 단언 (as HTMLAnchorElement) 조건문 필요 없음.
 link2.href = "";
+
+// 제네릭 타입의 메서드
+// 일치하는 테그이름이 발견되면 상응하는 반환값을 지정해준다.
+const img = document.createElement("img");
+img.src = "";
+
+const anchor = document.createElement("a");
+anchor.href = "";
+
+const div = document.querySelector("div");
+
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) => {
+  button.click();
+});
+
+// event
+// <div id='myDiv"></div>
+const myDIv = document.getElementById("myDiv");
+myDIv?.addEventListener("click", (e: MouseEvent | KeyboardEvent) => {
+  // 이벤트 객체 타입 - 광범위하게 접근 ( e: Event)
+  // 로직 구현
+  // Mouse Event
+  if (e instanceof MouseEvent) {
+    const x = e.clientX;
+    const y = e.clientY;
+  }
+  // Keyboard Event
+  if (e instanceof KeyboardEvent) {
+    console.log(e.code);
+  }
+});
